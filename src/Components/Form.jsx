@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import styles from "./Form.module.css";
 import Button from "./Button";
-import { useNavigate } from "react-router-dom";
 import BckButton from "./BckButton";
 
 export function convertToEmoji(countryCode) {
@@ -16,7 +15,6 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
-  const navigate = useNavigate();
 
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
